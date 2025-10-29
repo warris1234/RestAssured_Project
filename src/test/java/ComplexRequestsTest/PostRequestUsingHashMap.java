@@ -1,4 +1,4 @@
-package ComplexRequests;
+package ComplexRequestsTest;
 
 import static io.restassured.RestAssured.*;
 

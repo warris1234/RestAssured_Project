@@ -1,31 +1,24 @@
-package ComplexRequests;
+package ComplexRequestPOJOTest;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-import java.io.FilterOutputStream;
-import java.util.ArrayList;
-import java.util.HashMap;
-
-public class PostRequestMap
+public class PostApiUsingPojoTest
 {
-    public static void main(String[] args)
+    public static void main(String [] args)
     {
-        HashMap<String,Object> map = new HashMap<>();
-        map.put("name","Rahul");
-        ArrayList<String> li = new ArrayList<>();
-        li.add("Java");
-        li.add("Python");
-        li.add("API Testing");
-        map.put("skills",li);
+        ComplexRequestUsingPOJOTest cp = new ComplexRequestUsingPOJOTest("warris","automation",
+                new String[] {"java","c"},"equiniti",
+                "warris@outlook.com");
 
-       Response response = RestAssured.given().
+
+        Response response = RestAssured.given().
                 auth().
                 none().
                 header("ContentType","application/json").
                 contentType(ContentType.JSON).
-                body(map).
+                body(cp).
                 when().
                 log().
                 all().
@@ -35,4 +28,8 @@ public class PostRequestMap
         System.out.println(response.body().toString());
         System.out.println(response.asString());
     }
+
+
+
+
 }

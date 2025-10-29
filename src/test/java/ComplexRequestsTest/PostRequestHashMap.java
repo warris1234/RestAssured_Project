@@ -1,8 +1,7 @@
-package ComplexRequests;
+package ComplexRequestsTest;
 
 import static io.restassured.RestAssured.*;
 
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 

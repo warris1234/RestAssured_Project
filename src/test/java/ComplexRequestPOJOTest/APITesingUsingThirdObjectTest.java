@@ -1,24 +1,23 @@
-package ComplexRequestPOJO;
+package ComplexRequestPOJOTest;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class PostApiUsingPojo
-{
+public class APITesingUsingThirdObjectTest {
     public static void main(String [] args)
     {
-        ComplexRequestUsingPOJO cp = new ComplexRequestUsingPOJO("warris","automation",
-                new String[] {"java","c"},"equiniti",
-                "warris@outlook.com");
-
+        EmployeeNewDataComplexRequestTest ed = new EmployeeNewDataComplexRequestTest
+                ("warris","Automation Test Engineer",new String[] {"java","restAssured"},
+                        "Virtusa","Sonai","Bangalore",
+                        "500008");
 
         Response response = RestAssured.given().
                 auth().
                 none().
                 header("ContentType","application/json").
                 contentType(ContentType.JSON).
-                body(cp).
+                body(ed).
                 when().
                 log().
                 all().
@@ -29,7 +28,5 @@ public class PostApiUsingPojo
         System.out.println(response.asString());
     }
 
+    }
 
-
-
-}

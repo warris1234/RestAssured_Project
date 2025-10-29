@@ -1,11 +1,11 @@
-package ComplexRequestPOJO;
+package ComplexRequestPOJOTest;
 
 public class Detailss {
     private String companyName;
     private String Manager;
-    private Address address;
+    private AddressTest address;
 
-    public Detailss(String companyName,String Manager,Address address)
+    public Detailss(String companyName, String Manager, AddressTest address)
     {
         this.companyName = companyName;
         this.Manager = Manager;
@@ -20,7 +20,7 @@ public class Detailss {
     {
         return Manager;
     }
-    public Address getAddressaddress()
+    public AddressTest getAddressaddress()
     {
         return address;
     }

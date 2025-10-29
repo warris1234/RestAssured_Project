@@ -1,15 +1,13 @@
-package Autentication;
+package AutenticationTest;
 // Importing static methods for cleaner syntax
-import static io.restassured.RestAssured.*;
 
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.codehaus.groovy.ast.tools.GeneralUtils.param;
 
-public class Auth2_0_GenerateTokenwithOutHardoded {
+public class Auth2_0_GenerateTokenwithOutHardodedTest {
     @Test(priority = 0)
     public void Auth2_TokenUsingAutomation() {
         // Step 1: Generate an OAuth2.0 access token dynamically (no hardcoding)

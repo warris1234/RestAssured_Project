@@ -1,11 +1,11 @@
-package ComplexRequestPOJO;
+package ComplexRequestPOJOTest;
 
-public class Address {
+public class AddressTest {
     private String city;
     private String pincode;
 
 
-    public Address(String city,String pincode)
+    public AddressTest(String city, String pincode)
     {
         this.city = city;
         this.pincode = pincode;

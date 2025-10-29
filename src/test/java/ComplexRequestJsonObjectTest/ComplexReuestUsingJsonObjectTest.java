@@ -1,13 +1,12 @@
-package ComplexRequestJsonObject;
+package ComplexRequestJsonObjectTest;
 
 import static io.restassured.RestAssured.*;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import netscape.javascript.JSObject;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-public class ComplexReuestUsingJsonObject
+public class ComplexReuestUsingJsonObjectTest
 {
 
     public static void main(String[] args) {

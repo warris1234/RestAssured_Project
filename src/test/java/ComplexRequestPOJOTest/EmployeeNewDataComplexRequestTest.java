@@ -1,21 +1,21 @@
-package ComplexRequestPOJO;
+package ComplexRequestPOJOTest;
 
-public class EmployeeNewDataComplexRequest {
+public class EmployeeNewDataComplexRequestTest {
     private String name;
     private String job;
     private String[] skills;
     private Detailss detailss;
-    private Address address;
+    private AddressTest address;
 
     //creating constructor
-   public EmployeeNewDataComplexRequest(String name,String job,String[] skills,
-                                        String companyName,String Manager,String city,String pincode)
+   public EmployeeNewDataComplexRequestTest(String name, String job, String[] skills,
+                                            String companyName, String Manager, String city, String pincode)
    {
        this.name = name;
        this.job = job;
        this.skills = skills;
        // create nested structure properly
-       Address address = new Address(city, pincode);
+       AddressTest address = new AddressTest(city, pincode);
        this.detailss = new Detailss(companyName,Manager,address);
 
 

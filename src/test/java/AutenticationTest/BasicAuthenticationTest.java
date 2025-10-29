@@ -1,12 +1,9 @@
-package Autentication;
-
-import static io.restassured.RestAssured.*;
+package AutenticationTest;
 
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
 
-public class BasicAuthentication extends BaseClass{
+public class BasicAuthenticationTest extends BaseClassTest {
     @Test
     public void BasicTestAutentication() {
 

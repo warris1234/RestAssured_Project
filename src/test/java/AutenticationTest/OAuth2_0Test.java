@@ -1,11 +1,11 @@
-package Autentication;
+package AutenticationTest;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class OAuth2_0 {
+public class OAuth2_0Test {
     //We are currently following a manual approach by copying the token from an external site and pasting it into our code. This is not a good practice, as it isn’t truly automated.
 
     @Test

@@ -1,13 +1,13 @@
-package ComplexRequestPOJO;
+package ComplexRequestPOJOTest;
 
-public class Details {
+public class DetailsTest {
 
     private String comapnyName;
     private String emailed;
 
 
     //creating constructor
-    public Details(String comapnyName,String emailed) {
+    public DetailsTest(String comapnyName, String emailed) {
         //we are using the current class constructor variable with the help of this keyword
         this.comapnyName = comapnyName;
         this.emailed = emailed;

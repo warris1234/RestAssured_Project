@@ -1,9 +1,9 @@
-package Autentication;
+package AutenticationTest;
 
 import io.restassured.RestAssured;
 import org.testng.annotations.BeforeClass;
 
-public class BaseClass
+public class BaseClassTest
 {
     @BeforeClass
     public void setUp()

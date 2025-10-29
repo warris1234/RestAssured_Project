@@ -1,23 +1,30 @@
-package ComplexRequestPOJO;
+package ComplexRequestsTest;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class APITesingUsingThirdObject {
-    public static void main(String [] args)
-    {
-        EmployeeNewDataComplexRequest ed = new EmployeeNewDataComplexRequest
-                ("warris","Automation Test Engineer",new String[] {"java","restAssured"},
-                        "Virtusa","Sonai","Bangalore",
-                        "500008");
+import java.util.ArrayList;
+import java.util.HashMap;
 
-        Response response = RestAssured.given().
+public class PostRequestMap
+{
+    public static void main(String[] args)
+    {
+        HashMap<String,Object> map = new HashMap<>();
+        map.put("name","Rahul");
+        ArrayList<String> li = new ArrayList<>();
+        li.add("Java");
+        li.add("Python");
+        li.add("API Testing");
+        map.put("skills",li);
+
+       Response response = RestAssured.given().
                 auth().
                 none().
                 header("ContentType","application/json").
                 contentType(ContentType.JSON).
-                body(ed).
+                body(map).
                 when().
                 log().
                 all().
@@ -27,6 +34,4 @@ public class APITesingUsingThirdObject {
         System.out.println(response.body().toString());
         System.out.println(response.asString());
     }
-
-    }
-
+}
