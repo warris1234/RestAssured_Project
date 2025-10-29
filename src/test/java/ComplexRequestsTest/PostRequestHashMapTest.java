@@ -7,7 +7,7 @@ import io.restassured.response.Response;
 
 import java.util.HashMap;
 
-public class PostRequestHashMap
+public class PostRequestHashMapTest
 {
     public static void main(String[] args)
     {

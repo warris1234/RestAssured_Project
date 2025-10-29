@@ -1,12 +1,12 @@
-package ComplexResuestNestedData;
+package ComplexResuestNestedDataTest;
 
-public class ComplexUsingNestedJson {
+public class ComplexUsingNestedJsonTest {
 
     private String instructor;
     private String url;
     private String services;
      private String expertise;
-    private  Courses courses;
+    private CoursesTest courses;
     private String Linkedin;
 
     public String getInstructor() {
@@ -29,7 +29,7 @@ public class ComplexUsingNestedJson {
         this.expertise = expertise;
     }
 
-    public void setCourses(Courses courses) {
+    public void setCourses(CoursesTest courses) {
         this.courses = courses;
     }
 
@@ -49,7 +49,7 @@ public class ComplexUsingNestedJson {
         return expertise;
     }
 
-    public Courses getCourses() {
+    public CoursesTest getCourses() {
         return courses;
     }
 

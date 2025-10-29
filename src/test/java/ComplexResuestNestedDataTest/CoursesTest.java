@@ -1,10 +1,8 @@
-package ComplexResuestNestedData;
-
-import groovyjarjarantlr4.v4.codegen.model.SrcOp;
+package ComplexResuestNestedDataTest;
 
 import java.util.List;
 
-public class Courses {
+public class CoursesTest {
 
     private List<WebAutomation>webAutomations;
     private List<APIAutomation>aPIAutomations;

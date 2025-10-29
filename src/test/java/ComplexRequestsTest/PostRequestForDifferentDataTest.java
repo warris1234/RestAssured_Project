@@ -7,7 +7,7 @@ import io.restassured.response.Response;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class PostRequestForDifferentData
+public class PostRequestForDifferentDataTest
 {
     public static void main(String[] args)
     {

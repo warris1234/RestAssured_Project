@@ -10,7 +10,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.post;
 
-public class PostRequest {
+public class PostRequestTest {
     public static void main(String[] args) {
 
         Map<String,Object> map = new HashMap<>();

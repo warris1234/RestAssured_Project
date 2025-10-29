@@ -8,7 +8,7 @@ import io.restassured.response.Response;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class PostRequestUsingHashMap {
+public class PostRequestUsingHashMapTest {
     public static void main(String[] args) {
 
 

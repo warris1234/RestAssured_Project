@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 import static io.restassured.RestAssured.given;
 
-public class PostRequestComplex {
+public class PostRequestComplexTest {
     public static void main(String[] args)
     {
         HashMap<String,Object> map = new HashMap<>();
